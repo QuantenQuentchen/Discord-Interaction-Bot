@@ -534,6 +534,7 @@ class NSFW_Interactions(commands.Cog):
         ctx.bot = bot
 
     @commands.command(pass_context=True, aliases=["gangbang", "GangBang", "GANGBANG"])
+    @commands.is_nsfw()
     async def Gangbang(self, ctx):
         """You have a Gangbang with the mentioned user(s)."""
         random.seed(time.time() * time.time() + time.time())
@@ -558,6 +559,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["bdsm"])
+    @commands.is_nsfw()
     async def BDSM(self, ctx):
         """You have a BDSM-Session with the mentioned user(s)."""
         random.seed(time.time() * time.time() + time.time())
@@ -582,6 +584,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True)
+    @commands.is_nsfw()
     async def Squirt(self, ctx):
         var = "squirt"
         """You're Squirting."""
@@ -593,6 +596,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True)
+    @commands.is_nsfw()
     async def Cum(self, ctx):
         var = "cum"
         """You're cumming."""
@@ -604,6 +608,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True)
+    @commands.is_nsfw()
     async def Masturbate(self, ctx):
         var = "masturbate"
         """You're Masturbating."""
@@ -615,6 +620,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["Boobshake", "boobshake"])
+    @commands.is_nsfw()
     async def BoobShake(self, ctx):
         var = "boobshake"
         """You're shaking your boobs."""
@@ -626,6 +632,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["oral"])
+    @commands.is_nsfw()
     async def Oral(self, ctx, user: discord.User):
         var = "oral"
         """You're having Oral Sex with the mentioned user."""
@@ -637,6 +644,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["vaginal"])
+    @commands.is_nsfw()
     async def Vaginal(self, ctx, user: discord.User):
         var = "vaginal"
         """You're having Sex with the mentioned user."""
@@ -648,6 +656,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["blowjob", "BJ", "bj"])
+    @commands.is_nsfw()
     async def Blowjob(self, ctx, user: discord.User):
         var = "blowjob"
         """You're sucking the mentioned users Dick."""
@@ -659,6 +668,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["Boobjob", "boobjob", "BoobJob", "Titfuck", "tityfuck"])
+    @commands.is_nsfw()
     async def Tityfuck(self, ctx, user: discord.User):
         var = "tityfuck"
         """You're fucking the mentioned users Tits."""
@@ -670,6 +680,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["cowgirl", "CowGirl"])
+    @commands.is_nsfw()
     async def Cowgirl(self, ctx, user: discord.User):
         var = "cowgirl"
         """You're having sex with the mentioned user in the Cowgirl position."""
@@ -681,6 +692,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["missionary"])
+    @commands.is_nsfw()
     async def Missionary(self, ctx, user: discord.User):
         var = "missionary"
         """You're having sex with the mentioned user in the Missionary position."""
@@ -692,6 +704,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["doggy"])
+    @commands.is_nsfw()
     async def Doggy(self, ctx, user: discord.User):
         var = "doggy"
         """You're having sex with the mentioned user in the Doggy position."""
@@ -703,6 +716,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["anal"])
+    @commands.is_nsfw()
     async def Anal(self, ctx, user: discord.User):
         var = "anal"
         """You're having anal sex with the mentioned user."""
@@ -714,6 +728,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["Sexslap", "sexslap"])
+    @commands.is_nsfw()
     async def SexSlap(self, ctx, user: discord.User):
         var = "sexslap"
         """You're slapping the mentioned user. But it's sexual."""
@@ -725,6 +740,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["rape"])
+    @commands.is_nsfw()
     async def Rape(self, ctx, user: discord.User):
         var = "rape"
         """You're raping the mentioned user."""
@@ -736,6 +752,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["incest"])
+    @commands.is_nsfw()
     async def Incest(self, ctx, user: discord.User):
         var = "incest"
         """You're having incestuous Relations the mentioned user."""
@@ -747,6 +764,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["petting"])
+    @commands.is_nsfw()
     async def Petting(self, ctx, user: discord.User):
         var = "petting"
         """You're petting the mentioned user."""
@@ -758,6 +776,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["play_with_boobs", "PwB", "BoobyPlay"])
+    @commands.is_nsfw()
     async def PlayWithBoobs(self, ctx, user: discord.User):
         var = "play_with_boobs"
         """You're playing the mentioned users Boobs."""
@@ -769,6 +788,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["seduce"])
+    @commands.is_nsfw()
     async def Seduce(self, ctx, user: discord.User):
         var = "seduce"
         """You're seducing the mentioned user."""
@@ -780,6 +800,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["date"])
+    @commands.is_nsfw()
     async def Date(self, ctx, user: discord.User):
         var = "date"
         """You're dating the mentioned user."""
@@ -791,6 +812,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["gay"])
+    @commands.is_nsfw()
     async def Gay(self, ctx, user: discord.User):
         var = "gay"
         """You're gaying the mentioned user."""
@@ -802,6 +824,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["Outdoors","Outdoorfuck"])
+    @commands.is_nsfw()
     async def OutdoorFuck(self, ctx, user: discord.User):
         var = "outdoors_fuck"
         """You're fucking the mentioned user Outside."""
@@ -813,6 +836,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["torture"])
+    @commands.is_nsfw()
     async def Torture(self, ctx, user: discord.User):
         var = "torture"
         """You're torturing the mentioned user."""
@@ -824,6 +848,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["DP","Doublepenetration"])
+    @commands.is_nsfw()
     async def DoublePenetration(self, ctx, user: discord.User, user2: discord.User):
         var = "double_penetration"
         """You and the first mentioned user both fuck the second mentioned user."""
@@ -835,6 +860,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["Sexbite","SB"])
+    @commands.is_nsfw()
     async def SexBite(self, ctx, user: discord.User):
         var = "sexbite"
         """You bite the mentioned user."""
@@ -846,6 +872,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["feet","foot"])
+    @commands.is_nsfw()
     async def Feet(self, ctx, user: discord.User):
         var = "feet"
         """You do stuff to the mentioned users Feet."""
@@ -857,6 +884,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["fist","fisting"])
+    @commands.is_nsfw()
     async def Fisting(self, ctx, user: discord.User):
         var = "fisting"
         """You fist the mentioned user."""
@@ -868,6 +896,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["Cum_On","cum_on"])
+    @commands.is_nsfw()
     async def CumOn(self, ctx, user: discord.User):
         var = "cum_on"
         """You cum on the mentioned user."""
@@ -879,6 +908,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["Cum_In","cum_in"])
+    @commands.is_nsfw()
     async def CumIn(self, ctx, user: discord.User):
         var = "cum_in"
         """You cum in the mentioned user."""
@@ -890,6 +920,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["Cum_With","cum_with"])
+    @commands.is_nsfw()
     async def CumWith(self, ctx, user: discord.User):
         var = "cum_with"
         """You cum with the mentioned user."""
@@ -901,6 +932,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["Futa", "futa"])
+    @commands.is_nsfw()
     async def Futanari(self, ctx, user: discord.User):
         var = "futanari"
         """You fuck the mentioned user as a Futanari."""
@@ -912,6 +944,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["Sexchoke"])
+    @commands.is_nsfw()
     async def SexChoke(self, ctx, user: discord.User):
         var = "sexchoke"
         """You choke the mentioned user. But Sexy..."""
@@ -923,6 +956,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["watersports","ws"])
+    @commands.is_nsfw()
     async def Watersports(self, ctx, user: discord.User):
         var = "watersports"
         """You urinate on mentioned user. But Sexy..."""
@@ -934,6 +968,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["bestiality"])
+    @commands.is_nsfw()
     async def Bestiality(self, ctx):
         var = "bestiality"
         """You fuck an Animal."""
@@ -945,6 +980,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["bondage"])
+    @commands.is_nsfw()
     async def Bondage(self, ctx, user: discord.User):
         var = "bondage"
         """You tie up the mentioned user. But Sexy..."""
@@ -956,6 +992,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["furry"])
+    @commands.is_nsfw()
     async def Furry(self, ctx, user: discord.User):
         var = "furry"
         """You have Sex with the mentioned user. But as an Animal ?"""
@@ -967,6 +1004,7 @@ class NSFW_Interactions(commands.Cog):
         await ctx.send(embed=e)
 
     @commands.command(pass_context=True, aliases=["molest"])
+    @commands.is_nsfw()
     async def Molest(self, ctx, user: discord.User):
         var = "molest"
         """You molest the mentioned user."""
