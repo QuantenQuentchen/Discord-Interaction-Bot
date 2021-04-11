@@ -4,4 +4,3 @@ async-timeout
 dnspython
 dill
 discord-pretty-help
-pickle
