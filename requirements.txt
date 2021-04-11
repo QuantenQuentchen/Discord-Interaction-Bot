@@ -1,0 +1,8 @@
+discord
+PyNaCl
+async-timeout
+dnspython
+dill
+random
+discord-pretty-help
+pickle
