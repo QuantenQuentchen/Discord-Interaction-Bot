@@ -4,6 +4,7 @@ ActList = []
 Memberlist = {}
 Gender = ["Male", "Female"]
 
+
 def getGuilds():
     Serverlist = []
     for guild in client.guilds:
@@ -26,6 +27,7 @@ def MakeChild(Mother, Father, Adoption):
         pass
     Mother.add_Offspring(Child)
     Father.add_Offspring(Child)
+
 
 class Interaction:
     Pos_Emoj = "✅"
@@ -596,8 +598,13 @@ class Member:
             self.Parents.append(Parent)
 
     def add_Spouse(self, Spouse):
-        if Spouse not in self.Siblings:
+        if Spouse not in self.Siblings and self.Offspring and self.Parents:
             self.Siblings.append(Spouse)
+
+    def remove_Spouse(self, Spouse):
+        if Spouse in self.Spouse:
+            self.Spouse.remove(Spouse)
+            self.FormerSpouse.append(Spouse)
 
     def add_sibling(self, Sib_User):
         if Sib_User not in self.Siblings:
@@ -617,6 +624,13 @@ class Member:
 
     def return_Parents(self):
         return self.Parents
+
+    def recurs_Parents(self, Recur, Limit):
+        if Limit >= Recur:
+            Recur = Recur + 1
+            return self.Parents
+        else:
+            return False
 
     def printRelation(self, degree):
         parnum = 0
