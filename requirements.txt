@@ -6,3 +6,5 @@ dill
 discord-pretty-help
 discord-py-slash-command
 numpy
+openpyxl
+psycopg2
