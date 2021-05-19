@@ -5,3 +5,4 @@ dnspython
 dill
 discord-pretty-help
 discord-py-slash-command
+numpy
