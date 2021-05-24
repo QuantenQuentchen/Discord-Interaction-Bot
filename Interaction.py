@@ -25,7 +25,7 @@ TalkAboutFears = CC.Interaction("TalkAboutFears", ["TalkAboutMyFears", "taf"],
                                 "You talk about your fears with the mentioned User", "talk_about_my_fears", False, 1,
                                 False, False, True,
                                 "2P Int")
-Love = CC.Interaction("Love", [], "Author// starts loving //Target//", "love", "You love the mentioned User", "love",
+Love = CC.Interaction("Love", [], "//Author// starts loving //Target//", "love", "You love the mentioned User", "love",
                       False, 1,
                       False, False, False, "2P Int")
 Cuddle = CC.Interaction("Cuddle", [], "//Author// cuddles with //Target//", "cuddle",
